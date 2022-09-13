@@ -17,3 +17,18 @@ header {
 #wins {
     margin-top: 3%;
 }
+
+/* The game photos */
+
+.photo1 {
+    width: 25%;
+    margin-left: 20%;
+    border: 10px solid purple;
+}
+
+.photo2 {
+    width: 25%;
+    float: right;
+    margin-right: 20%;
+    border: 10px solid green;
+}
