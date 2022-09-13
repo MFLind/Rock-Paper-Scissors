@@ -1,8 +1,19 @@
+/* The header */
 header {
     text-align: center;
     margin-top: 5%;
 }
 
+/* That part that you choice you wont to play */
 .make-a-choice {
     text-align: center;
+}
+
+#button {
+    left: 44%;
+    position: absolute;
+}
+
+#wins {
+    margin-top: 3%;
 }
