@@ -14,8 +14,22 @@ header {
     position: absolute;
 }
 
+.join-button {
+    border-radius: 10px;
+    padding: 5px 15px;
+}
+
 #wins {
     margin-top: 3%;
+}
+
+.your-score {
+    z-index: 1;
+    margin-left: 10%;
+}
+
+.computer-score {
+    z-index: 1;
 }
 
 /* The game photos */
@@ -24,6 +38,7 @@ header {
     width: 25%;
     margin-left: 20%;
     border: 10px solid purple;
+    z-index: -1;
 }
 
 .photo2 {
@@ -31,4 +46,5 @@ header {
     float: right;
     margin-right: 20%;
     border: 10px solid green;
+    z-index: -1;
 }
