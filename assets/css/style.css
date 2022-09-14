@@ -48,3 +48,19 @@ header {
     border: 10px solid green;
     z-index: -1;
 }
+
+/* Footer */ 
+
+footer {
+    background-color: black;
+}
+
+footer > h3 {
+    color: white;
+    text-align: center;
+}
+
+footer > p {
+    color: white;
+    text-align: center
+}
