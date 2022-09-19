@@ -40,7 +40,7 @@ button_scissors.addEventListener("click", handleClick);
     /* Check winner and update score */
     checkWinner(playerChoice, computerChoice);
 
-};
+}
 
 
 /* computers turn */
