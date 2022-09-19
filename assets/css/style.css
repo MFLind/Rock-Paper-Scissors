@@ -14,8 +14,8 @@ header {
 }
 
 #button {
-    left: 42%;
-    position: absolute;
+    display: flex;
+    justify-content: center;
 }
 
 .buttons {
@@ -23,9 +23,6 @@ header {
     padding: 5px 15px;
 }
 
-#wins {
-    margin-top: 4%;
-}
 
 .make-a-choice {
     clear: both;
