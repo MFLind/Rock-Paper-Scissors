@@ -1,3 +1,7 @@
+body {
+    margin-left: 0%;
+}
+
 /* The header */
 header {
     text-align: center;
@@ -10,7 +14,7 @@ header {
 }
 
 #button {
-    left: 44%;
+    left: 42%;
     position: absolute;
 }
 
@@ -20,30 +24,35 @@ header {
 }
 
 #wins {
-    margin-top: 3%;
+    margin-top: 4%;
 }
 
-.your-score {
-    z-index: 1;
+.make-a-choice {
+    clear: both;
+}
+
+#your-choice {
+    float: left;
     margin-left: 30%;
-    position: absolute;
-    color: white;
 }
 
-.computer-score {
-    z-index: 1;
-    margin-left: 63%;
-    position: absolute;
-    color: white;
+#computer-choice {
+    float: right;
+    margin-right: 29%;
 }
+
 
 /* The game photos */
+
+.photo {
+    clear: both;
+}
 
 #photo1 {
     width: 25%;
     margin-left: 20%;
     border: 10px solid purple;
-    z-index: -1;
+    float: left;
 }
 
 #photo2 {
@@ -51,13 +60,32 @@ header {
     float: right;
     margin-right: 20%;
     border: 10px solid green;
-    z-index: -1;
+}
+
+/* Score */
+
+#score {
+
+   clear: both;
+}
+
+#pscore1 {
+    float: left;
+    margin-left: 30%;
+}
+
+#cscore1 {
+    float: right;
+    margin-right: 30%;
 }
 
 /* Footer */ 
 
 footer {
     background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 footer > h3 {
@@ -69,3 +97,4 @@ footer > p {
     color: white;
     text-align: center
 }
+
