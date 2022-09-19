@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/js/script.js">
     <title>Rock Paper Scissors</title>
 </head>
 <body>
@@ -16,12 +15,12 @@
         <h3>Make a choice</h3>
     </div>
     <div id="button">
-        <input type="submit" value="Rock" class="join-button"> 
-        <input type="submit" value="Paper" class="join-button">
-        <input type="submit" value="Scissors" class="join-button">
+        <button aria-label="Rock" class="buttons" data-choice="0" id="button_rock">Rock</button>
+        <button aria-label="Paper" class="buttons" data-choice="1" id="button_paper">Paper</button>
+        <button aria-label="Scissors" class="buttons" data-choice="2" id="button_scissors">Scissors</button>
     </div>
     <div class="make-a-choice">
-        <h3 id="wins">Player wins</h3>
+        <h3 id="wins"></h3>
     </div>
     <div class="your-score">
         <h3>Your score:</h3>
@@ -30,13 +29,21 @@
         <h3>Computer score:</h3>
     </div>
     <div class="photo">
-        <img src="assets/images/rock_paper_scissors.jpg" alt="rock paper scissors" class="photo1">
-        <img src="assets/images/rock_paper_scissors.jpg" alt="rock paper scissors" class="photo2">
+        <img src="assets/images/rock_paper_scissors.jpg" alt="rock paper scissors" id="photo1">
+        <img src="assets/images/rock_paper_scissors.jpg" alt="rock paper scissors" id="photo2">
+    </div>
+
+    <div>
+        <p><strong>Your score:</strong><strong id="pscore">0</strong></p>
+    </div>
+    <div>
+        <p><strong>Computers score:</strong><strong id="cscore">0</strong></p>
     </div>
 
     <footer>
         <h3>Rules</h3>
         <p>Choice between rock, paper or scissors. Scissors wins over paper. Rock wins over scissors and paper wins over rock.</p>
     </footer>
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
