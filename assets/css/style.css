@@ -1,18 +1,15 @@
+/* Remove left margin on whole page */
 body {
     margin-left: 0%;
 }
 
-/* The header */
+/* The header style */
 header {
     text-align: center;
     margin-top: 5%;
 }
 
-/* That part that you choice you wont to play */
-.make-a-choice {
-    text-align: center;
-}
-
+/* Make buttons center aligned using flexbox based on total center of all button center */
 #button {
     display: flex;
     justify-content: center;
@@ -23,8 +20,9 @@ header {
     padding: 5px 15px;
 }
 
-
+/* That part that you choice you wont to play */
 .make-a-choice {
+    text-align: center;
     clear: both;
 }
 
@@ -39,8 +37,7 @@ header {
 }
 
 
-/* The game photos */
-
+/* The photo for gameboard objects */
 .photo {
     clear: both;
 }
@@ -59,8 +56,7 @@ header {
     border: 10px solid green;
 }
 
-/* Score */
-
+/* Score board style */
 #score {
 
    clear: both;
@@ -77,7 +73,6 @@ header {
 }
 
 /* Footer */ 
-
 footer {
     background-color: black;
     position: absolute;

@@ -1,29 +1,30 @@
-/*  */
+/* Add constants for the diffent game objects */
 
 const ROCK = 0;
 const PAPER = 1;
 const SCISSORS = 2;
 
+/* Score for game */
 let score_player = 0;
 let score_computer = 0;
 
 
 /* Get button referens */
-
 let button_rock = document.getElementById("button_rock");
 let button_paper = document.getElementById("button_paper");
 let button_scissors = document.getElementById("button_scissors");
 
-/* event listner for rock */
 
+/* Add event listner for the buttons */
 button_rock.addEventListener("click", handleClick);
 button_paper.addEventListener("click", handleClick);
 button_scissors.addEventListener("click", handleClick);
 
-
+/* Event handler for button events */
  function handleClick(event) {   
     let playerChoice = event.target.getAttribute('data-choice');
 
+    /* Update Player image for player button selection */
     let playerPhoto = document.getElementById("photo1");
     if (playerChoice == ROCK) {
         playerPhoto.src = "assets/images/rock2.jpg";
@@ -33,17 +34,20 @@ button_scissors.addEventListener("click", handleClick);
         playerPhoto.src = "assets/images/scissors.jpg";
     }
 
+    /* Get Computer selections */
     let computerChoice = computer_player();
+
+    /* Check winner and update score */
     checkWinner(playerChoice, computerChoice);
 
 };
 
 
 /* computers turn */
-
 function computer_player() {
     let computerChoice = Math.floor(Math.random()*2);
 
+    /* Update Computer image for random choice selection */
     let computerPhoto = document.getElementById("photo2");
     if (computerChoice == ROCK) {
         computerPhoto.src = "assets/images/rock2.jpg";
@@ -57,7 +61,6 @@ function computer_player() {
 }
 
 /* Correct answers */
-
 function checkWinner(playerChoice, computerChoice) {
 
     if (playerChoice == computerChoice) {

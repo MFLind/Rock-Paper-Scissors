@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Add meta content -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Import style sheet -->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Rock Paper Scissors</title>
 </head>
@@ -14,23 +16,27 @@
     <div class="make-a-choice">
         <h3>Make a choice</h3>
     </div>
+    <!-- Add buttons with variable data-choice for getting game object variants -->
     <div id="button">
         <button aria-label="Rock" class="buttons" data-choice="0" id="button_rock">Rock</button>
         <button aria-label="Paper" class="buttons" data-choice="1" id="button_paper">Paper</button>
         <button aria-label="Scissors" class="buttons" data-choice="2" id="button_scissors">Scissors</button>
     </div>
     <div class="make-a-choice">
+        <!-- Add game winner status bar with a default value of "Let's play" will be replace in js code for the winner -->
         <h3 id="wins">Let's play</h3>
     </div>
     <div class="choice">
         <h3 id="your-choice">Your</h3>
         <h3 id="computer-choice">Computer</h3>
     </div>
+    <!-- Add inital gameboard picture, pictures will be change dynamical by code -->
     <div class="photo">
         <img src="assets/images/rock_paper_scissors.jpg" alt="rock paper scissors" id="photo1">
         <img src="assets/images/rock_paper_scissors.jpg" alt="rock paper scissors" id="photo2">
     </div>
 
+    <!-- Add score board with initial place holder 0, will be picked up in js and updated to proper score -->
     <div id="score"> 
         <p id="pscore1"><strong>Score: </strong><strong id="pscore">0</strong></p>
         <p id="cscore1"><strong>Score: </strong><strong id="cscore">0</strong></p>
@@ -40,6 +46,8 @@
         <h3>Rules</h3>
         <p>Choice between rock, paper or scissors. Scissors wins over paper. Rock wins over scissors and paper wins over rock.</p>
     </footer>
+
+    <!-- Import script -->
     <script src="assets/js/script.js"></script>
 </body>
 </html>
